@@ -1,5 +1,5 @@
 # calcpy
-A low-profile calculus module that parses and derives mathematical functions enclosed in strings.
+A low-profile calculus module that uses calculus for practical problems such as projectile motion.
 
 Goals
 - [ ] Derive using power rule
