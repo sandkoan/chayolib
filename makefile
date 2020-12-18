@@ -1,5 +1,5 @@
-SOURCES := $(shell find -name '*.cpp')
+# SOURCES := $(shell find -name '*.cpp')
 shared:
-	g++ -c -Wall -Werror -fpic $(SOURCES)
-	g++ -shared -o ./projektileMotion/shared/program.so *.o
+	g++ -c -Wall -Werror -fpic src\quadratic.cpp
+	g++ -shared -o ./projektileMotion/shared/program.dll *.o
 	rm *.o

@@ -1,6 +1,6 @@
 // #include <iostream>
 #include <math.h>
-#include <boost/python.hpp>vc
+// #include <boost/python.hpp>
 // #include "quadratic.h"
 
 double temp(double a, double b, double c){
