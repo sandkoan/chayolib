@@ -1,8 +1,5 @@
-quadratic2: quadratic1
-	rm blah.o
-quadratic1: blah.o
-	gcc blah.o -o blah
-blah.o: blah.c
-	gcc -c quadratic.c -o blah.o
-blah.c:
-	echo "pass"
+SOURCES := $(shell find -name '*.cpp')
+shared:
+	g++ -c -Wall -Werror -fpic $(SOURCES)
+	g++ -shared -o ./projektileMotion/shared/program.so *.o
+	rm *.o
